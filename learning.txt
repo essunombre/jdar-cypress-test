@@ -1,0 +1,34 @@
+So after I have my project, I want to run, npm install cypress --save-dev --force
+this will install cypress on my package json.
+Now is time to run cypress for the first time to open Cypress configutator, npx cypress open
+
+I will have 2 options:
+-Component testing, when I want to test specific Ui components on a web application.
+-E2E testing the one I am looking for. I select this one and leave it as default.
+
+Then I will see somthing like Scaffold examples of different test
+
+NOW I SHOULD SEE A CYPRESS FOLDER.
+
+By default it has TS right now, I can change the tests to be js, by going to the cypressconfig.ts.
+https://docs.cypress.io/guides/references/configuration
+
+FRAMEWORK STRUCTURE - cypress (folders)
+
+support:
+-E2E: First thing that gets executed when a test is run so it is a good place to setup my environment.
+-command: I can create my own custom commands, good practice is to use commands that can be used on the entire framework. 
+for example login command.
+
+fixtures:
+I can keep my JSON files, it can hold my test data hold the response of mock api
+
+E2E:
+the place where tests are stored, the getting started is there and the advanced examples. Here I will be adding my folder with pro tests brother.
+
+/.cypress.config.js
+
+to start configuring I can read guides/references/configuration. Testing Type-Specific Options e2e
+I will use as well the excludeSpecPattern.
+viewport...on top of e2e
+
